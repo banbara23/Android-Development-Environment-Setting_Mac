@@ -1,88 +1,131 @@
-#MacでAndroidアプリ開発の環境構築メモ
-MacのYosemiteに開発環境を構築するときの池村メモ (2015/07/16時点)  
-まだまだ作成中、マークダウン記法も勉強中...
-
-##CommandLineToolを入れる
-MacOSがYosemiteでなければ最新コマンドラインツールをインストールできないので、可能であればMacを最新にする。  
-難しいのであれば、旧バージョンを入れる（要アップルID)  
-[Apple Developer Support](https://developer.apple.com/jp/support/xcode/)  
-iPhoneアプリも開発したい人はXcodeを入れるべし
+#MacでAndroidアプリ開発の環境構築メモ (2015/07/16時点)  
+MacにAndroid開発環境を構築するための池村メモ、適宜更新していく予定
+<br><br>
 
 ##JDKインストール
-- Java 6 インストール（これがないとAndroidStudioでエラーメッセージが出る）  
+- Java 6 インストール  
 Java for OS X 2014-001：http://support.apple.com/kb/DL1572
 
-- compileSdkVersion21以降を使うならJDK7or8も必要 by[ Google](http://tools.android.com/tech-docs/configuration/osx-jdk)  
+- Java 7 or 8  
 [Java Downloads](http://www.oracle.com/technetwork/java/javase/downloads/index.html)からJDKを入れる。
-(自分は7u75を入れた)
+(自分は7u75を入れたが最新の8でいいかも)
+
+<br>
 
 ##Android Studioのインストール
-- 下記リンクからDonload Android Studio for Macを選んでダウンロード
+- 下記リンクからDonload Android Studio for Macを選んでダウンロードしてインストール
 http://developer.android.com/sdk/index.html
 
-- Android SDK Managerを起動してInstall or Update
-（Google USB Driverも入れた）  
-これは時間かかるので早いうちにインストール開始しておき、他作業するのがおすすめ  
-Android4.0以上のSDK Platformを入れておけば間違いないと思う
+- Android SDK Managerを起動してInstall or Update  
+以下、自分の環境にインストール済みリスト
 
-- Android Studio プラグインの導入
-Eclipse Code Formatter：Android Studio で Eclipse のコードフォーマットルールを使えるようにするプラグイン  
+```
+Tools
+Android SDK Tools
+Android SDK Platform-tools
+Android SDK Build-tools全て
+
+Android M (API 22)
+から
+Android 4.0 (API 14)
+までのSDK Platformだけ
+
+Extras
+Android Support Repository
+Android Support Library
+Google Repository
+```
 
 
-- Android Studioのテーマ導入（必須ではない）  
+これは時間かかるので早いうちにインストール開始しておき、他作業を進めるのがおすすめ  
+
+- Android Studioプラグインの導入（必須）
+Eclipse Code Formatter：Android Studio で Eclipse のコードフォーマットルールを使えるようにするプラグイン  <br>
+Preferences > Plugins > Browse Repository > 検索欄に「Eclipse Code Formatter」と入力すると出てくる
+
+- Android Studioのテーマ導入（任意）  
 Preferences > Appearance > Theme をDaucula
 一度restartして以下から好きなテーマファイルを取得
 http://www.ideacolorthemes.org/home/
 Android StudioのFile > Import Settings > テーマファイルを選択
 
-- AndroidStudioで保存時に自動整形+import整理する（これはオススメ）  
-http://qiita.com/konifar/items/1f56c82490986d1613a8
+- AndroidStudioで保存時に自動整形+import整理する（必須？）  
+http://qiita.com/konifar/items/1f56c82490986d1613a8  
+手順作成中
 
-##エミュレータのインストール
+<br>
+
+##Genymotionのインストール
 AndroidStudioにもエミュレータはついているが、Genymotionの方が圧倒的に早いのでおすすめ  
-（早いので実機よりデバッグ効率が良い）
+（早すぎて実機よりデバッグ効率が良い）
 
-- Virtual Boxのインストール（OS Xを選択）
+- Virtual Boxのインストール（OS Xを選択）  
 https://www.virtualbox.org/wiki/Downloads
 
-- Genymotionのインストール（無料アカウント登録が必要）
-https://www.genymotion.com/#!/download
+- Genymotionのインストール（無料アカウント登録が必要）  
+http://nelog.jp/genymotion-install
 
-- Genymotion-ARM-Translation_v1.1.zipをダウンロードしてGenymotionのエミュレータにドラッグしてインストール
-http://forum.xda-developers.com/showthread.php?t=2528952
+- GooglePlayにアクセスできるようする<br>
+http://nelog.jp/how-to-use-google-play-in-genymotion
 
-- GooglePlayにアクセスできるように、下記リンク内ファイルを全てダウンロード  
-解凍する必要はない（safariは勝手にzipが解答されるので注意）
-https://app.box.com/s/9jpnqfkfm2me4saa6pttfltdsqtyiwa8
+<br>
+
+##CommandLineToolのインストール
+これを入れることによって色々便利なツールが使えるようになるので、とりあえず入れよう<br>
+MacOSがYosemiteでなければ最新コマンドラインツールをインストールできない？ので、可能であればMacを最新にする。  
+インストール方法は複数あるが、特別な理由が無い限りXcodeをインストールしておけば間違いない
+
+- 一番簡単な方法  
+**AppStoreからXcodeを検索してインストールする**<br>
+　少し時間はかかるが一番手っ取り早い  
+　インストール後は一度でいいのでXcodeを起動させておく
+
+- コマンドでインストールする場合(未検証)<br>
+ターミナルを開いて以下を入力
+```
+xcode-select --install
+```
+[参考ページ](http://karabun.hatenablog.com/entry/2015/01/08/073737)
+
+- 自分でバージョンを選んで入れたい場合（要アップルID)  
+[Apple Developer Support](https://developer.apple.com/jp/support/xcode/)
+
+<br>
 
 ###ここまで導入したらAndroid開発の最低限は満たしているはず。
 
-#以下はあると便利なツール群
+<br>
 
-- SourceTree  
+#以下はあると便利なツール
+
+###SourceTree  
 GitをGUIで操作できるツール、知名度高し  
 https://www.atlassian.com/ja/software/sourcetree/overview
 
-- Homebrew  
+###Homebrew  
 これはほぼ必須、とりあえず入れておこう  
 http://brew.sh
 
 ここからコマンドライン系、よく分からない人はスルーしてOK  
 
 - zsh  
-bashが物足りない方へ
+bashが物足りない方へ  
 http://qiita.com/shinofara/items/802e282dbc3d2e36e2a1
 
 - oh-my-zsh  
-zshの設定が面倒な方へ
+zshの設定が面倒な方へ  
 http://qiita.com/udzura/items/0d08d71d809bfd8c5981
 
 
 - .oh-my-zshのテーマ  
-gozilla,
+http://qiita.com/udzura/items/0d08d71d809bfd8c5981#2-5
+個人的に、gozilla,
 apple,
 eastwood,
 miloshadzic
+あたりが気に入った
+
+<br>
 
 .bash_profileを作成して以下を追加
 ```
@@ -95,6 +138,7 @@ else
 fi
 ```
 
+<br>
 bashrcを作成してadbパスを通す
 ```
 echo 'export PATH=$PATH:$/Users/ikemurakazutaka/Library/Android/sdk/platform-tools' >> ~/.bashrc;source .bashrc
@@ -105,10 +149,17 @@ if [[ -s ~/.bashrc ]] ; then
 fi
 ```
 
-###tigのインストール
+<br>
+
+- tigのインストール
+Gitを使いやすくするツール、愛用している  
+```
 brew install tig
+```
 http://qiita.com/suino/items/b0dae7e00bd7165f79ea
 http://qiita.com/KENJU/items/13313429df707fecfadf
+
+<br>
 
 ##macをAndroidStudio用に設定する
 (ここは作成中)  
