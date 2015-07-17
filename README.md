@@ -125,6 +125,8 @@ eastwood,
 miloshadzic
 あたりが気に入った
 
+brewのtree,caskあたりも興味あり<br>
+slはネタ<br>
 <br>
 
 .bash_profileを作成して以下を追加
