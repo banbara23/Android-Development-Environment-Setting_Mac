@@ -1,5 +1,5 @@
-#MacでAndroidアプリ開発の環境構築メモ (2015/07/16時点)  
-MacにAndroid開発環境を構築するための池村メモ、適宜更新していく予定
+#MacでAndroidアプリ開発の環境構築メモ 
+MacにAndroid開発環境を構築するための池村メモ 2015/07/22更新
 <br><br>
 
 ##JDKインストール
@@ -94,23 +94,23 @@ xcode-select --install
 
 <br>
 
-#あると便利なツール
+#あると便利な開発ツール
 
 ###SourceTree  
 GitをGUIで操作できるツール、知名度高し  
 https://www.atlassian.com/ja/software/sourcetree/overview
 
-
-
 ###Atom
 Github発のテキストブラウザ、マークダウンのプレビューが凄く便利<br>
 https://atom.io/
 
+###iTerm2
+多機能ターミナル、タブ使えるだけで作業が捗る<br>
+https://www.iterm2.com/
+
+---
 ここからコマンドライン系、よく分からない人はスルーしてOK  
 
-###iTerm2
-ターミナルを進化させた
-https://www.iterm2.com/
 ###Homebrew  
 ソフトウェアの導入を単純化するパッケージ管理システム<br>
 http://brew.sh
@@ -173,15 +173,14 @@ http://qiita.com/KENJU/items/13313429df707fecfadf
 ##macをAndroidStudio用に設定する
 (ここは作成中)  
 
-
 macのシステム設定　＞　キーボード　＞　F1、F2などのすべてのキーを標準ファンクションキーとして使用のチェックを入れる
 
 
 ##Android Studio 設定
-ある程度作成したが未完成 (2015/07/22)
+ある程度作成した (2015/07/22)
 
 ```
-右上のAndroid Studio > Preferences...を選択し
+右上のAndroid Studio > Preferences... を選択して設定画面を開く
 
 ・ゲッター・セッター生成時にPrefixやSuffixを除く
 Editor > General > Code Style > Java > Code Generation > Naming > Name prefix
@@ -209,7 +208,6 @@ Other Settings > Eclipse Code Formatter
   Eclipse Java Formatter config file の[Browse...]を押下して小窓からフォーマット.xmlを選択してOK
 
 Todo:自動フォーマット設定
-
 ```
 
 ##補足
@@ -225,7 +223,5 @@ Oracleのサイトからダウンロードした場合のディレクトリ
 
 ##macにあると便利なソフト
 - Google 日本語入力 - ダウンロード : https://www.google.co.jp/ime/index-mac.html
-- Swift - クリップボード拡張Macアプリ「Clipy」を公開しました - Qiita : http://qiita.com/econa77/items/1848bf3fdfb7127ca9b8  
-- Atom : https://atom.io/  
-- Chrome：https://www.google.co.jp/chrome/browser/desktop/
+- Clipy : http://qiita.com/econa77/items/1848bf3fdfb7127ca9b8  
 http://qiita.com/econa77/items/1848bf3fdfb7127ca9b8
