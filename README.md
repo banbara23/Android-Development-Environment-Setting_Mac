@@ -69,13 +69,13 @@ http://nelog.jp/how-to-use-google-play-in-genymotion
 <br>
 
 ##CommandLineToolのインストール
-これを入れることによって色々便利なツールが使えるようになるので、とりあえず入れよう<br>
-MacOSがYosemiteでなければ最新コマンドラインツールをインストールできない？ので、可能であればMacを最新にする。  
-インストール方法は複数あるが、特別な理由が無い限りXcodeをインストールしておけば間違いない
+入れることによって色々便利なツールが使えるようになるので損はない<br>
+MacのOSが最新でなければインストールできない事もあるので、可能であればAppStoreから最新にする。<br>
+インストール方法はいくつかあるが、Xcodeをインストールしておけば間違いない<br>
 
 - 一番簡単な方法  
-**AppStoreからXcodeを検索してインストールする**<br>
-　少し時間はかかるが一番手っ取り早い  
+**AppStoreからXcodeを検索してインストールする** (要Apple ID)<br>
+　少し時間はかかるが一番手っ取り早い<br>
 　インストール後は一度でいいのでXcodeを起動させておく
 
 - コマンドでインストールする場合(未検証)<br>
@@ -85,7 +85,7 @@ xcode-select --install
 ```
 [参考ページ](http://karabun.hatenablog.com/entry/2015/01/08/073737)
 
-- 自分でバージョンを選んで入れたい場合（要アップルID)  
+- 自分でバージョンを選んで入れたい場合 (要Apple ID)  
 [Apple Developer Support](https://developer.apple.com/jp/support/xcode/)
 
 <br>
@@ -94,17 +94,26 @@ xcode-select --install
 
 <br>
 
-#以下はあると便利なツール
+#あると便利なツール
 
 ###SourceTree  
 GitをGUIで操作できるツール、知名度高し  
 https://www.atlassian.com/ja/software/sourcetree/overview
 
-###Homebrew  
-これはほぼ必須、とりあえず入れておこう  
-http://brew.sh
+
+
+###Atom
+Github発のテキストブラウザ、マークダウンのプレビューが凄く便利<br>
+https://atom.io/
 
 ここからコマンドライン系、よく分からない人はスルーしてOK  
+
+###iTerm2
+ターミナルを進化させた
+https://www.iterm2.com/
+###Homebrew  
+ソフトウェアの導入を単純化するパッケージ管理システム<br>
+http://brew.sh
 
 - zsh  
 bashが物足りない方へ  
@@ -215,8 +224,8 @@ Oracleのサイトからダウンロードした場合のディレクトリ
 
 
 ##macにあると便利なソフト
-- iTerm2：https://www.iterm2.com/  
 - Google 日本語入力 - ダウンロード : https://www.google.co.jp/ime/index-mac.html
 - Swift - クリップボード拡張Macアプリ「Clipy」を公開しました - Qiita : http://qiita.com/econa77/items/1848bf3fdfb7127ca9b8  
 - Atom : https://atom.io/  
+- Chrome：https://www.google.co.jp/chrome/browser/desktop/
 http://qiita.com/econa77/items/1848bf3fdfb7127ca9b8
