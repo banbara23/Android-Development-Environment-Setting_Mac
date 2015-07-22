@@ -17,6 +17,7 @@ Java for OS X 2014-001：http://support.apple.com/kb/DL1572
 http://developer.android.com/sdk/index.html
 
 - Android SDK Managerを起動してInstall or Update  
+(時間がかなりかかるので早いうちにインストール開始しておき、他作業を進めるのがおすすめ）<br>
 以下、自分の環境にインストール済みリスト
 
 ```
@@ -35,9 +36,6 @@ Android Support Repository
 Android Support Library
 Google Repository
 ```
-
-
-これは時間かかるので早いうちにインストール開始しておき、他作業を進めるのがおすすめ  
 
 - Android Studioプラグインの導入（必須）
 Eclipse Code Formatter：Android Studio で Eclipse のコードフォーマットルールを使えるようにするプラグイン  <br>
@@ -65,7 +63,7 @@ https://www.virtualbox.org/wiki/Downloads
 - Genymotionのインストール（無料アカウント登録が必要）  
 http://nelog.jp/genymotion-install
 
-- GooglePlayにアクセスできるようする<br>
+- GooglePlayにアクセスできるようする(必須ではないが後々必要になるかも)<br>
 http://nelog.jp/how-to-use-google-play-in-genymotion
 
 <br>
@@ -170,71 +168,40 @@ http://qiita.com/KENJU/items/13313429df707fecfadf
 macのシステム設定　＞　キーボード　＞　F1、F2などのすべてのキーを標準ファンクションキーとして使用のチェックを入れる
 
 
-Android Studio 設定
-以下の設定をして下さい。
-設定項目へのパス
-設定項目
-設定値
-Code Style > General
-Use tab character
-オン
-Smart tabs
-オン
-Code Style > Groovy
-Use tab character
-オン
-Smart tabs
-オン
-Code Style > HTML
-Use tab character
-オン
-Smart tabs
-オン
-Code Style > Java
-Use tab character
-オン
-Smart tabs
-オン
-Code Style > Java > Code Generation > Naming > Name prefix
-Field
-m
-Static field
-s
-Code Style > XML
-Use tab character
-オン
-Smart tabs
-オン
-Maven > Importing
-Use Maven3 to import project
-オフ
-Eclipse Code Formatter
-※プロジェクトを開いてからの設定画面でのみ項目表示されます
-Use the Eclipse code formatter
-オン
-Eclipse Java Formatter config file
-RLS-CodeFormatterProfile.xml
-Appearance
-Show memory indicator
-オン
-Editor
-Allow placement of caret after end of line
-オフ
-Editor > Appearance
-Show line numbers
-オン
-Show whitespaces
-オン
-Editor > Auto Import
-Optimize import on the fly
-オン
-Add unambiguous on the fly
-オン
-Plugins
-CVS Integration
-オフ
-JavaFX
-オフ
+##Android Studio 設定
+ある程度作成したが未完成 (2015/07/22)
+
+```
+右上のAndroid Studio > Preferences...を選択し
+
+・ゲッター・セッター生成時にPrefixやSuffixを除く
+Editor > General > Code Style > Java > Code Generation > Naming > Name prefix
+Prefer longer names オン
+Field に m を入力
+Static field に s を入力
+（suffixは空欄でOK）
+
+Editor > General > Appearance
+・行番号表示
+Editor > General > Appearance > Show line numbers チェックオン
+・スペース等の表示
+Editor > General > Appearance > Show whitespaces チェックオン
+・エディター内に表示されている縦線を非表示
+Editor > General > Appearance > Show right margin (configured in Code Style options) のチェックを外す。
+・自動インポート
+Editor > General > Auto Import > Optimize import on the fly オン
+Editor > General > Auto Import > Add unambiguous on the fly オン
+
+
+Eclipse Code Formatterをインストールした後、
+フォーマット.xmlファイルをダウンロードしてある状態で
+Other Settings > Eclipse Code Formatter
+  Use the Eclipse code formatter を選択してON
+  Eclipse Java Formatter config file の[Browse...]を押下して小窓からフォーマット.xmlを選択してOK
+
+Todo:自動フォーマット設定
+
+```
 
 ##補足
 - Android Studioビルド時にJavaバージョンを聞かれたら  
