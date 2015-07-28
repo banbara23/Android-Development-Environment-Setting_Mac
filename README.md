@@ -37,19 +37,21 @@ Android Support Library
 Google Repository
 ```
 
-- Android Studioプラグインの導入（必須）
-Eclipse Code Formatter：Android Studio で Eclipse のコードフォーマットルールを使えるようにするプラグイン  <br>
-Preferences > Plugins > Browse Repository > 検索欄に「Eclipse Code Formatter」と入力すると出てくる
+####Android Studioプラグインの導入
+- Eclipse Code Formatter：Android Studio でコードフォーマットルールを使える（必須）
+- Android Postfix Completion：[凄く便利](http://qiita.com/takahirom/items/ac1d1b08351610dfcc43) (任意）
+- プラグインの導入方法
+    - Preferences > Plugins > Browse Repository > 検索欄にプラグイン名を入力 > 入れたいプラグインを選択 > 右欄のInstallボタンをおす
 
-- Android Studioのテーマ導入（任意）  
-Preferences > Appearance > Theme をDaucula
-一度restartして以下から好きなテーマファイルを取得
-http://www.ideacolorthemes.org/home/
-Android StudioのFile > Import Settings > テーマファイルを選択
-
-- AndroidStudioで保存時に自動整形+import整理する（必須？）  
-http://qiita.com/konifar/items/1f56c82490986d1613a8  
+####AndroidStudioで保存時に自動整形+import整理する（ほぼ必須）  
+http://qiita.com/konifar/items/1f56c82490986d1613a8<br>
 手順作成中
+
+####Android Studioのテーマ導入（任意）  
+Preferences > Appearance > Theme をDaucula<br>
+一度restartして以下から好きなテーマファイルを取得<br>
+http://www.ideacolorthemes.org/home/<br>
+Android StudioのFile > Import Settings > テーマファイルを選択
 
 <br>
 
