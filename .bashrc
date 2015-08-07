@@ -34,7 +34,6 @@ alias iptx="adb shell input text"
 
 # ------ linux ------
 alias taila="tail -f /private/var/log/apache2/access_log"
-alias taila="tail -f /private/var/log/apache2/access_log"
 alias openexcel="open -a 'Microsoft Excel'"
 alias rm='rm -i'
 alias grep='grep --color'
