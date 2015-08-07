@@ -31,8 +31,12 @@ alias hierarchy="/Users/ikemurakazutaka/Library/Android/sdk/tools/hierarchyviewe
 alias acrun='adb shell dumpsys activity | grep -B 1 "Run #[0-9]*:"'
 alias actop="adb shell dumpsys activity top"
 alias iptx="adb shell input text"
- 
+
 # ------ linux ------
 alias taila="tail -f /private/var/log/apache2/access_log"
-
+alias taila="tail -f /private/var/log/apache2/access_log"
+alias openexcel="open -a 'Microsoft Excel'"
+alias rm='rm -i'
+alias grep='grep --color'
+alias ps='ps --sort=start_time'
 alias openexcel="open -a 'Microsoft Excel'"
