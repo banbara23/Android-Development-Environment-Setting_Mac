@@ -107,36 +107,13 @@ Github発のテキストブラウザ、マークダウンのプレビューが�
 https://atom.io/
 
 ###iTerm2
-多機能ターミナル、タブ使えるだけで作業が捗る<br>
+多機能ターミナル<br>
 https://www.iterm2.com/
 
 ---
 ここからコマンドライン系、よく分からない人はスルーしてOK  
 
-###Homebrew  
-ソフトウェアの導入を単純化するパッケージ管理システム<br>
-http://brew.sh
-
-- zsh  
-bashが物足りない方へ  
-http://qiita.com/shinofara/items/802e282dbc3d2e36e2a1
-
-- oh-my-zsh  
-zshの設定が面倒な方へ  
-http://qiita.com/udzura/items/0d08d71d809bfd8c5981
-
-
-- .oh-my-zshのテーマ  
-http://qiita.com/udzura/items/0d08d71d809bfd8c5981#2-5
-個人的に、gozilla,
-apple,
-eastwood,
-miloshadzic
-あたりが気に入った
-
-brewのtree,caskあたりも興味あり<br>
-slはネタ<br>
-<br>
+###bashの設定
 
 .bash_profileを作成して以下を追加
 ```
@@ -160,15 +137,40 @@ if [[ -s ~/.bashrc ]] ; then
 fi
 ```
 
-<br>
+- zsh  
+bashが物足りない方へ  
+http://qiita.com/shinofara/items/802e282dbc3d2e36e2a1
 
-- tigのインストール
-Gitを使いやすくするツール、愛用している  
-```
-brew install tig
-```
-http://qiita.com/suino/items/b0dae7e00bd7165f79ea
-http://qiita.com/KENJU/items/13313429df707fecfadf
+###Homebrew  
+ソフトウェアの導入を単純化するパッケージ管理システム<br>
+http://brew.sh
+
+####以下、Homebrewで入れるリスト
+
+- oh-my-zsh  
+zshの設定が面倒な方へ  
+http://qiita.com/udzura/items/0d08d71d809bfd8c5981
+
+- .oh-my-zshのテーマ  
+http://qiita.com/udzura/items/0d08d71d809bfd8c5981#2-5
+個人的に、gozilla,
+apple,
+eastwood,
+miloshadzic
+あたりが気に入った
+
+- tig
+Gitを使いやすくする  
+[解説](http://qiita.com/suino/items/b0dae7e00bd7165f79ea)、[操作方法](http://qiita.com/KENJU/items/13313429df707fecfadf)
+
+- tree  
+  ディレクトリの構造が[こんな感じ](http://qiita.com/kanuma1984/items/c158162adfeb6b217973)で見れる
+
+- brew-cask  
+  便利そうだが、ソフト更新が手動になっちゃう＆Alfred等のツールが正常に動かないところが不満
+
+- sl  
+  ネタ
 
 <br>
 
