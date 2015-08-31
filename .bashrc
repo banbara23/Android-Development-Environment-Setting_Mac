@@ -9,6 +9,11 @@ export ANDROID_SDK=Library/Android/sdk/
 alias cdadb="cd ~/Library/Android/sdk/tools"
 alias cdsdk="cd ~/$ANDROID_SDK"
 
+# cdコマンド実行後、lsを実行する
+function cd() {
+  builtin cd $@ && ls -la;
+}
+
 # ------ git -------
 alias ll='ls -l'
 alias la='ls -la'
@@ -30,12 +35,11 @@ alias uiat=$ANDROID_SDK"/tools/uiautomatorviewer"
 alias hierarchy="/Users/ikemurakazutaka/Library/Android/sdk/tools/hierarchyviewer"
 alias acrun='adb shell dumpsys activity | grep -B 1 "Run #[0-9]*:"'
 alias actop="adb shell dumpsys activity top"
-alias iptx="adb shell input text"
+alias inputid="adb shell input text autest6@waku-2.com"
 
-# ------ linux ------
+# ------ other ------
 alias taila="tail -f /private/var/log/apache2/access_log"
 alias openexcel="open -a 'Microsoft Excel'"
 alias rm='rm -i'
 alias grep='grep --color'
 alias ps='ps --sort=start_time'
-alias openexcel="open -a 'Microsoft Excel'"
