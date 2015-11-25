@@ -36,6 +36,8 @@ alias hierarchy="/Users/ikemurakazutaka/Library/Android/sdk/tools/hierarchyviewe
 alias acrun='adb shell dumpsys activity | grep -B 1 "Run #[0-9]*:"'
 alias actop="adb shell dumpsys activity top"
 alias inputid="adb shell input text autest6@waku-2.com"
+alias ipt="adb shell input text 入力される文字"
+alias ipp="ipt;adb shell input keyevent 66;ipzp"
 
 # ------ other ------
 alias taila="tail -f /private/var/log/apache2/access_log"
