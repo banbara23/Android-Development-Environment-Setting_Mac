@@ -92,7 +92,7 @@ xcode-select --install
 
 <br>
 
-###ここまで導入したらAndroid開発の最低限は満たしているはず。
+###ここまで導入したらAndroid開発最低限の条件は満たしているはず。
 
 <br>
 
@@ -152,14 +152,14 @@ zshの設定が面倒な方へ
 http://qiita.com/udzura/items/0d08d71d809bfd8c5981
 
 - .oh-my-zshのテーマ  
-http://qiita.com/udzura/items/0d08d71d809bfd8c5981#2-5
+http://qiita.com/udzura/items/0d08d71d809bfd8c5981#2-5  
 個人的に、gozilla,
 apple,
 eastwood,
 miloshadzic
 あたりが気に入った
 
-- tig
+- tig  
 Gitを使いやすくする  
 [解説](http://qiita.com/suino/items/b0dae7e00bd7165f79ea)、[操作方法](http://qiita.com/KENJU/items/13313429df707fecfadf)
 
@@ -175,13 +175,11 @@ Gitを使いやすくする
 <br>
 
 ##macをAndroidStudio用に設定する
-(ここは作成中)  
 
 macのシステム設定　＞　キーボード　＞　F1、F2などのすべてのキーを標準ファンクションキーとして使用のチェックを入れる
 
 
 ##Android Studio 設定
-ある程度作成した (2015/07/22)
 
 ```
 右上のAndroid Studio > Preferences... を選択して設定画面を開く
@@ -225,7 +223,10 @@ Oracleのサイトからダウンロードした場合のディレクトリ
 
 
 
-##macにあると便利なソフト
+##macにあると開発に便利なソフト
 - Google 日本語入力 - ダウンロード : https://www.google.co.jp/ime/index-mac.html
 - Clipy : http://qiita.com/econa77/items/1848bf3fdfb7127ca9b8  
-http://qiita.com/econa77/items/1848bf3fdfb7127ca9b8
+- Charles  
+- Skech  
+- Karabiner
+- http://qiita.com/econa77/items/1848bf3fdfb7127ca9b8
