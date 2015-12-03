@@ -38,10 +38,17 @@ Google Repository
 ```
 
 ####Android Studioプラグインの導入
+プラグインの導入方法は、  
+Preferences > Plugins > Browse Repository > 検索欄にプラグイン名を入力 > 入れたいプラグインを選択 > 右欄のInstallボタンをおす
+
+おすすめプラグイン
 - Eclipse Code Formatter：Android Studio でコードフォーマットルールを使える（必須）
 - Android Postfix Completion：[凄く便利](http://qiita.com/takahirom/items/ac1d1b08351610dfcc43) (任意）
-- プラグインの導入方法
-    - Preferences > Plugins > Browse Repository > 検索欄にプラグイン名を入力 > 入れたいプラグインを選択 > 右欄のInstallボタンをおす
+- ADB Idea：[便利そう](http://qiita.com/hkusu/items/14a69dbdcb83ea0f1c24#-adb-idea)
+- Android ButterKnife Zelezny：[ButterKnife使いに](http://qiita.com/hkusu/items/14a69dbdcb83ea0f1c24#-android-butterknife-zelezny)
+- Android Material Design Icon Generator：[Google の Material icon を簡単にプロジェクトへ導入できるようになる](http://qiita.com/hkusu/items/14a69dbdcb83ea0f1c24#-android-material-design-icon-generator)
+- Android Drawale Viewer：[drawable リソースの中身が確認できます](http://qiita.com/hkusu/items/14a69dbdcb83ea0f1c24#-android-drawale-viewer)
+- Fabric for Android Studio：[Fabric使いに](http://qiita.com/hkusu/items/14a69dbdcb83ea0f1c24#-fabric-for-android-studio)
 
 ####AndroidStudioで保存時に自動整形+import整理する（ほぼ必須）  
 http://qiita.com/konifar/items/1f56c82490986d1613a8<br>
@@ -109,6 +116,10 @@ https://atom.io/
 ###iTerm2
 多機能ターミナル<br>
 https://www.iterm2.com/
+
+###Charles
+通信系のデバッグには便利<br>
+http://qiita.com/usagimaru/items/d340e87da98e62f99b60
 
 ---
 ここからコマンドライン系、よく分からない人はスルーしてOK  
@@ -223,10 +234,10 @@ Oracleのサイトからダウンロードした場合のディレクトリ
 
 
 
-##macにあると開発に便利なソフト
+##macにあると開発に便利なソフトその他
 - Google 日本語入力 - ダウンロード : https://www.google.co.jp/ime/index-mac.html
 - Clipy : http://qiita.com/econa77/items/1848bf3fdfb7127ca9b8  
-- Charles  
 - Skech  
 - Karabiner
 - http://qiita.com/econa77/items/1848bf3fdfb7127ca9b8
+- astash
