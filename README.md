@@ -223,6 +223,8 @@ Other Settings > Eclipse Code Formatter
 Todo:自動フォーマット設定
 ```
 
+[toolsが便利](http://qiita.com/kgmyshin/items/df0abb03fe51b8645292#%E3%81%A0%E3%81%91%E3%81%A9%E3%81%B6%E3%81%A3%E3%81%A1%E3%82%83%E3%81%91%E6%AF%8E%E5%9B%9E%E5%BF%98%E3%82%8C%E3%81%A6%E3%81%97%E3%81%BE%E3%81%86%E3%81%A8%E3%81%84%E3%81%86%E6%96%B9%E3%81%AF)
+
 ##補足
 - Android Studioビルド時にJavaバージョンを聞かれたら  
 http://idea-cloud.com/dev/jdk_version.html  
