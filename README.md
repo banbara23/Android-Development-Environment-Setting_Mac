@@ -220,7 +220,11 @@ Other Settings > Eclipse Code Formatter
   Use the Eclipse code formatter を選択してON
   Eclipse Java Formatter config file の[Browse...]を押下して小窓からフォーマット.xmlを選択してOK
 
-Todo:自動フォーマット設定
+レイアウトのフォーマット
+    下記のページでも紹介されているフォーマットにするととても編集しやすいです。
+    https://github.com/futurice/android-best-practices#resources
+    XML のコードスタイルを変えてあげれば簡単に導入できます。
+    Preferences から Editor > Code Style > XML を開き、Layout Files の Insert line break after last attribute にチェックを入れれば OK です。
 ```
 
 [toolsが便利](http://qiita.com/kgmyshin/items/df0abb03fe51b8645292#%E3%81%A0%E3%81%91%E3%81%A9%E3%81%B6%E3%81%A3%E3%81%A1%E3%82%83%E3%81%91%E6%AF%8E%E5%9B%9E%E5%BF%98%E3%82%8C%E3%81%A6%E3%81%97%E3%81%BE%E3%81%86%E3%81%A8%E3%81%84%E3%81%86%E6%96%B9%E3%81%AF)
