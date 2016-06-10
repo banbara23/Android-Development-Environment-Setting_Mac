@@ -42,13 +42,13 @@ Google Repository
 Preferences > Plugins > Browse Repository > 検索欄にプラグイン名を入力 > 入れたいプラグインを選択 > 右欄のInstallボタンをおす
 
 おすすめプラグイン
-- Eclipse Code Formatter：Android Studio でコードフォーマットルールを使える（必須）
-- Android Postfix Completion：[凄く便利](http://qiita.com/takahirom/items/ac1d1b08351610dfcc43) (任意）
+- Eclipse Code Formatter：コードフォーマットルールを適用させる（必須）
+- Android Postfix Completion：コード書く手間が省ける [凄く便利](http://qiita.com/takahirom/items/ac1d1b08351610dfcc43) (任意）
 - ADB Idea：[便利そう](http://qiita.com/hkusu/items/14a69dbdcb83ea0f1c24#-adb-idea)
 - Android ButterKnife Zelezny：[ButterKnife使いに](http://qiita.com/hkusu/items/14a69dbdcb83ea0f1c24#-android-butterknife-zelezny)
 - Android Material Design Icon Generator：[Google の Material icon を簡単にプロジェクトへ導入できるようになる](http://qiita.com/hkusu/items/14a69dbdcb83ea0f1c24#-android-material-design-icon-generator)
 - Android Drawale Viewer：[drawable リソースの中身が確認できます](http://qiita.com/hkusu/items/14a69dbdcb83ea0f1c24#-android-drawale-viewer)
-- Fabric for Android Studio：[Fabric使いに](http://qiita.com/hkusu/items/14a69dbdcb83ea0f1c24#-fabric-for-android-studio)
+- [AndroidWiFiADB](https://github.com/pedrovgs/AndroidWiFiADB) ワイヤレスADB化が簡単に
 
 ####AndroidStudioで保存時に自動整形+import整理する（ほぼ必須）  
 http://qiita.com/konifar/items/1f56c82490986d1613a8<br>
