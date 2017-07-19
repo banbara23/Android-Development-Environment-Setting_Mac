@@ -146,10 +146,6 @@ if [[ -s ~/.bashrc ]] ; then
 fi
 ```
 
-- zsh  
-bashが物足りない方へ  
-http://qiita.com/shinofara/items/802e282dbc3d2e36e2a1
-
 ### Homebrew  
 ソフトウェアの導入を単純化するパッケージ管理システム<br>
 http://brew.sh
@@ -168,6 +164,9 @@ eastwood,
 miloshadzic
 あたりが気に入った
 
+- Prezto のほうが軽量でいいかも
+  - [zsh（Prezto）で快適なSSHクライアント環境を作る](https://s8a.jp/mac-os-zsh-prezto-ssh)
+
 - tig  
 Gitを使いやすくする  
 [解説](http://qiita.com/suino/items/b0dae7e00bd7165f79ea)、[操作方法](http://qiita.com/KENJU/items/13313429df707fecfadf)
@@ -175,11 +174,9 @@ Gitを使いやすくする
 - tree  
   ディレクトリの構造が[こんな感じ](http://qiita.com/kanuma1984/items/c158162adfeb6b217973)で見れる
 
-- brew-cask  
-  便利そうだが、ソフト更新が手動になっちゃう＆Alfred等のツールが正常に動かないところが不満
+- cask
+  - 超便利で必須
 
-- sl  
-  ネタ
 
 <br>
 
@@ -239,9 +236,39 @@ Oracleのサイトからダウンロードした場合のディレクトリ
 
 
 ## macにあると開発に便利なソフトその他
-- Google 日本語入力 - ダウンロード : https://www.google.co.jp/ime/index-mac.html
-- Clipy : http://qiita.com/econa77/items/1848bf3fdfb7127ca9b8  
-- Skech  
-- Karabiner
-- http://qiita.com/econa77/items/1848bf3fdfb7127ca9b8
-- astash
+brew caskで一括インストールする
+
+コマンド
+```
+brew cask install atom betterzipql boostnote flycut google-japanese-ime iterm2 libreoffice qlcolorcode qlimagesize qlmarkdown qlprettypatch qlstephen quicklook-csv quicklook-json sequel-pro sourcetree visual-studio-code xquartz slack google-chrome vlc appcleaner genymotion
+```
+
+以下が一括インストールされる
+```
+appcleaner
+atom
+betterzipql
+boostnote
+firefox
+flycut
+franz
+genymotion
+google-chrome
+google-japanese-ime
+iterm2
+qlcolorcode
+qlimagesize
+qlmarkdown
+qlprettypatch
+qlstephen
+quicklook-csv
+quicklook-json
+sequel-pro
+skitch
+slack
+sourcetree
+virtualbox
+visual-studio-code
+vlc
+xquartz
+```
