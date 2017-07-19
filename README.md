@@ -1,18 +1,15 @@
-#MacでAndroidアプリ開発の環境構築メモ 
+# MacでAndroidアプリ開発の環境構築メモ 
 MacにAndroid開発環境を構築するための池村メモ 2015/07/22更新
 <br><br>
 
-##JDKインストール
+## JDKインストール
 - Java 6 インストール  
-Java for OS X 2014-001：http://support.apple.com/kb/DL1572
+[Java for OS X 2014-001](http://support.apple.com/kb/DL1572)
 
-- Java 7 or 8  
-[Java Downloads](http://www.oracle.com/technetwork/java/javase/downloads/index.html)からJDKを入れる。
-(自分は7u75を入れたが最新の8でいいかも)
+- Java 8  
+[Java Downloads](http://www.oracle.com/technetwork/java/javase/downloads/index.html)から最新のJDKを入れる。
 
-<br>
-
-##Android Studioのインストール
+## Android Studioインストール
 - 下記リンクからDonload Android Studio for Macを選んでダウンロードしてインストール
 http://developer.android.com/sdk/index.html
 
@@ -26,9 +23,9 @@ Android SDK Tools
 Android SDK Platform-tools
 Android SDK Build-tools全て
 
-Android M (API 22)
+Android 8.0 (API 26)
 から
-Android 4.0 (API 14)
+Android 4.4 (API 19)
 までのSDK Platformだけ
 
 Extras
@@ -37,7 +34,7 @@ Android Support Library
 Google Repository
 ```
 
-####Android Studioプラグインの導入
+### Android Studioプラグインの導入
 プラグインの導入方法は、  
 Preferences > Plugins > Browse Repository > 検索欄にプラグイン名を入力 > 入れたいプラグインを選択 > 右欄のInstallボタンをおす
 
@@ -50,11 +47,11 @@ Preferences > Plugins > Browse Repository > 検索欄にプラグイン名を入
 - Android Drawale Viewer：[drawable リソースの中身が確認できます](http://qiita.com/hkusu/items/14a69dbdcb83ea0f1c24#-android-drawale-viewer)
 - [AndroidWiFiADB](https://github.com/pedrovgs/AndroidWiFiADB) ワイヤレスADB化が簡単に
 
-####AndroidStudioで保存時に自動整形+import整理する（ほぼ必須）  
+### AndroidStudioで保存時に自動整形+import整理する（ほぼ必須）  
 http://qiita.com/konifar/items/1f56c82490986d1613a8<br>
 手順作成中
 
-####Android Studioのテーマ導入（任意）  
+### Android Studioのテーマ導入（任意）  
 Preferences > Appearance > Theme をDaucula<br>
 一度restartして以下から好きなテーマファイルを取得<br>
 http://www.ideacolorthemes.org/home/<br>
@@ -62,7 +59,7 @@ Android StudioのFile > Import Settings > テーマファイルを選択
 
 <br>
 
-##Genymotionのインストール
+## Genymotionのインストール
 AndroidStudioにもエミュレータはついているが、Genymotionの方が圧倒的に早いのでおすすめ  
 （早すぎて実機よりデバッグ効率が良い）
 
@@ -77,7 +74,7 @@ http://nelog.jp/how-to-use-google-play-in-genymotion
 
 <br>
 
-##CommandLineToolのインストール
+## CommandLineToolのインストール
 入れることによって色々便利なツールが使えるようになるので損はない<br>
 MacのOSが最新でなければインストールできない事もあるので、可能であればAppStoreから最新にする。<br>
 インストール方法はいくつかあるが、Xcodeをインストールしておけば間違いない<br>
@@ -99,32 +96,32 @@ xcode-select --install
 
 <br>
 
-###ここまで導入したらAndroid開発最低限の条件は満たしているはず。
+### ここまで導入したらAndroid開発最低限の条件は満たしているはず。
 
 <br>
 
-#あると便利な開発ツール
+# あると便利な開発ツール
 
-###SourceTree  
+### SourceTree  
 GitをGUIで操作できるツール、知名度高し  
 https://www.atlassian.com/ja/software/sourcetree/overview
 
-###Atom
+### Atom
 Github発のテキストブラウザ、マークダウンのプレビューが凄く便利<br>
 https://atom.io/
 
-###iTerm2
+### iTerm2
 多機能ターミナル<br>
 https://www.iterm2.com/
 
-###Charles
+### Charles
 通信系のデバッグには便利<br>
 http://qiita.com/usagimaru/items/d340e87da98e62f99b60
 
 ---
 ここからコマンドライン系、よく分からない人はスルーしてOK  
 
-###bashの設定
+### bashの設定
 
 .bash_profileを作成して以下を追加
 ```
@@ -143,6 +140,7 @@ bashrcを作成してadbパスを通す
 echo 'export PATH=$PATH:$/Users/ikemurakazutaka/Library/Android/sdk/platform-tools' >> ~/.bashrc;source .bashrc
 
 .zshrcを作成してbashrcを読み込む
+```
 if [[ -s ~/.bashrc ]] ; then
   . ~/.bashrc
 fi
@@ -152,11 +150,11 @@ fi
 bashが物足りない方へ  
 http://qiita.com/shinofara/items/802e282dbc3d2e36e2a1
 
-###Homebrew  
+### Homebrew  
 ソフトウェアの導入を単純化するパッケージ管理システム<br>
 http://brew.sh
 
-####以下、Homebrewで入れるリスト
+#### 以下、Homebrewで入れるリスト
 
 - oh-my-zsh  
 zshの設定が面倒な方へ  
@@ -185,12 +183,12 @@ Gitを使いやすくする
 
 <br>
 
-##macをAndroidStudio用に設定する
+## macをAndroidStudio用に設定する
 
 macのシステム設定　＞　キーボード　＞　F1、F2などのすべてのキーを標準ファンクションキーとして使用のチェックを入れる
 
 
-##Android Studio 設定
+## Android Studio 設定
 
 ```
 右上のAndroid Studio > Preferences... を選択して設定画面を開く
@@ -229,7 +227,7 @@ Other Settings > Eclipse Code Formatter
 
 [toolsが便利](http://qiita.com/kgmyshin/items/df0abb03fe51b8645292#%E3%81%A0%E3%81%91%E3%81%A9%E3%81%B6%E3%81%A3%E3%81%A1%E3%82%83%E3%81%91%E6%AF%8E%E5%9B%9E%E5%BF%98%E3%82%8C%E3%81%A6%E3%81%97%E3%81%BE%E3%81%86%E3%81%A8%E3%81%84%E3%81%86%E6%96%B9%E3%81%AF)
 
-##補足
+## 補足
 - Android Studioビルド時にJavaバージョンを聞かれたら  
 http://idea-cloud.com/dev/jdk_version.html  
 Macにプリインストールされているもののディレクトリ  
@@ -240,7 +238,7 @@ Oracleのサイトからダウンロードした場合のディレクトリ
 
 
 
-##macにあると開発に便利なソフトその他
+## macにあると開発に便利なソフトその他
 - Google 日本語入力 - ダウンロード : https://www.google.co.jp/ime/index-mac.html
 - Clipy : http://qiita.com/econa77/items/1848bf3fdfb7127ca9b8  
 - Skech  
