@@ -1,5 +1,5 @@
 # MacでAndroidアプリ開発の環境構築メモ 
-MacにAndroid開発環境を構築するための池村メモ 2015/07/22更新
+MacにAndroid開発環境を構築するためのメモ
 <br><br>
 
 ## JDKインストール
@@ -39,9 +39,10 @@ Google Repository
 Preferences > Plugins > Browse Repository > 検索欄にプラグイン名を入力 > 入れたいプラグインを選択 > 右欄のInstallボタンをおす
 
 おすすめプラグイン
-- Eclipse Code Formatter：コードフォーマットルールを適用させる（必須）
+- Eclipse Code Formatter：コードフォーマットルールを適用させる
+- Save Actions:もう保存マクロを作る必要はない http://android.gcreate.jp/368
 - Android Postfix Completion：コード書く手間が省ける [凄く便利](http://qiita.com/takahirom/items/ac1d1b08351610dfcc43) (任意）
-- ADB Idea：[便利そう](http://qiita.com/hkusu/items/14a69dbdcb83ea0f1c24#-adb-idea)
+- ADB Idea：[便利](https://android.benigumo.com/20140515/androidstudio-%E3%81%8B%E3%82%89%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E5%81%9C%E6%AD%A2%E3%81%97%E3%81%9F%E3%82%8A%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E6%B6%88%E3%81%97%E3%81%9F%E3%82%8A%E3%82%A2/)
 - Android ButterKnife Zelezny：[ButterKnife使いに](http://qiita.com/hkusu/items/14a69dbdcb83ea0f1c24#-android-butterknife-zelezny)
 - Android Material Design Icon Generator：[Google の Material icon を簡単にプロジェクトへ導入できるようになる](http://qiita.com/hkusu/items/14a69dbdcb83ea0f1c24#-android-material-design-icon-generator)
 - Android Drawale Viewer：[drawable リソースの中身が確認できます](http://qiita.com/hkusu/items/14a69dbdcb83ea0f1c24#-android-drawale-viewer)
