@@ -1,47 +1,32 @@
-export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
-export CLICOLOR=1
-export LSCOLORS=ExFxBxDxCxegedabagacad
-export PATH=$PATH:/Users/ikemurakazutaka/Library/Android/sdk/platform-tools
-export PATH=$PATH:/Users/ikemurakazutaka/Library/Android/sdk/tools
-export ANDROID_SDK=Library/Android/sdk/
-
-# cd --------
-alias cdadb="cd ~/Library/Android/sdk/tools"
-alias cdsdk="cd ~/$ANDROID_SDK"
-
 # cdコマンド実行後、lsを実行する
 function cd() {
   builtin cd $@ && ls -la;
 }
 
 # ------ git -------
-alias ll='ls -l'
-alias la='ls -la'
 alias gs='git status -u -b -s'
 alias gd='git diff --stat'
-alias gdc="git diff --stat --cached"
-alias av="git branch -av"
-alias sbr="source ~/.bashrc; exec zsh"
-alias vbr="vim ~/.bashrc"
-alias vzr="vim ~/.zshrc"
-alias vbp="vim ~/.bash_profile"
+alias gb='git branch'
+alias gco='git check out'
 
 # ------ adb -------
-alias adbrestart="adb kill-server; adb start-server"
-#alias sshot=$ANDROID_SDK"/tools/screenshot2 ~/Desktop/screenshot.png; open ~/Desktop/screenshot.png";
-alias sshot=$ANDROID_SDK"/tools/screenshot2 ~/Desktop/screenshot.png";
-alias sshot=$ANDROID_SDK"/tools/screenshot2 ~/Desktop/screenshot.png; open ~/Desktop/screenshot.png"
-alias uiat=$ANDROID_SDK"/tools/uiautomatorviewer"
-alias hierarchy="/Users/ikemurakazutaka/Library/Android/sdk/tools/hierarchyviewer"
 alias acrun='adb shell dumpsys activity | grep -B 1 "Run #[0-9]*:"'
 alias actop="adb shell dumpsys activity top"
-alias inputid="adb shell input text autest6@waku-2.com"
-alias ipt="adb shell input text 入力される文字"
+alias ipt="adb shell input text"
 alias ipp="ipt;adb shell input keyevent 66;ipzp"
+alias ss='~/dev/screenshot.sh'
+alias sss='~/dev/screenshotSmall.sh'
+alias rec='adb shell screenrecord /sdcard/output.mp4 --size 540x960'
+alias recgif='~/dev/screenrecordConvertor.sh'
 
 # ------ other ------
-alias taila="tail -f /private/var/log/apache2/access_log"
-alias openexcel="open -a 'Microsoft Excel'"
+alias ll='ls -l'
+alias la='ls -la'
+
+alias sb="source ~/.bash_profile; source ~/.bashrc"
+alias vbp="vim ~/.bash_profile"
+alias vbr="vim ~/.bashrc"
+
 alias rm='rm -i'
 alias grep='grep --color'
 alias ps='ps --sort=start_time'
