@@ -8,6 +8,11 @@ alias gs='git status -u -b -s'
 alias gd='git diff --stat'
 alias gb='git branch'
 alias gco='git check out'
+alias gg='git graph'
+alias ggg='git graph-simple'
+alias go='$HOME/bin/git-checkout-direct.sh'
+alias de='git checkout -B develop origin/develop'
+alias ma='git checkout -B master origin/master'
 
 # ------ adb -------
 alias acrun='adb shell dumpsys activity | grep -B 1 "Run #[0-9]*:"'
