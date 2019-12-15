@@ -23,6 +23,8 @@ alias ss='~/dev/screenshot.sh'
 alias sss='~/dev/screenshotSmall.sh'
 alias rec='adb shell screenrecord /sdcard/output.mp4 --size 540x960'
 alias recgif='~/dev/screenrecordConvertor.sh'
+alias inst='adb install'
+alias instr='adb install -r'
 
 # ------ other ------
 alias ll='ls -l'
