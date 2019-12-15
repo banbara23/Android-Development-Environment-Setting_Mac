@@ -29,9 +29,6 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
-#ndenv
-export PATH="$HOME/.ndenv/bin:$PATH"
-
 eval "$(ndenv init -)"
 
 # Android
@@ -42,7 +39,7 @@ PATH=$PATH:$ANDROID_HOME/platform-tools
 PATH=$PATH:$ANDROID_HOME/tools/bin
 
 # Flutter
-export PATH=$PATH:`pwd`/flutter/bin
+export PATH="$PATH":"$HOME/flutter/bin"
 
 export PATH="/usr/local/sbin:$PATH"
 
