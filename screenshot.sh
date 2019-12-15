@@ -8,8 +8,8 @@ adb shell screencap -p "/sdcard/${FILENAME}"
 adb pull /sdcard/"${FILENAME}" ~/Pictures/
 adb shell rm "/sdcard/${FILENAME}"
 
-# 画像を50%にリサイズ
-convert ~/Pictures/"${FILENAME}" -scale 50% ~/Pictures/"${RENAME}"
+# 画像をリサイズ
+convert ~/Pictures/"${FILENAME}" -resize "$1"x ~/Pictures/"${RENAME}"
 rm -f ~/Pictures/"${FILENAME}"
 
 echo "saved ~/Pictures/${RENAME}."
